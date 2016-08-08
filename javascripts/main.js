@@ -39,7 +39,7 @@
 // Booleans look like: true... or false
 // { propertyBoolean: false }
 
-// Falsy: null, false, "", undefined
+// Falsy: null, false, "", undefined, NaN (not a number)
 
 // Variables hold data for later.
 // They look like: var name = "jason";
@@ -91,6 +91,11 @@ var classroomObject = {
   students: ["Max", "Gilbert", "Lauren", "Adam", "Ernesto"],
   name: "Blue Star"
 };
+
+var pythonClassroomObject = {
+  instructor: "Robin"
+};
+
 console.log(classroomObject);
 
 // To change data in an object... we use...
@@ -101,3 +106,26 @@ console.log(classroomObject);
 console.log(classroomObject.projector);
 classroomObject.projector = true;
 console.log(classroomObject.projector);
+
+var amountOfTacosIWillEatAtLunch = "200";
+var amountOfTacosICanActuallyEat = "3";
+
+var amountOfLeftOverTacos = amountOfTacosIWillEatAtLunch - amountOfTacosICanActuallyEat;
+
+console.log(amountOfLeftOverTacos);
+
+// This causes concatenation "adding of
+// strings"
+var amountOfFEEStudents = 4;
+var amountOfBEEStudents = 2;
+console.log(amountOfFEEStudents + amountOfBEEStudents + " Students in both classes. The FEE students are in the " + classroomObject.name + " room");
+
+// Store day names of the week
+// "Monday" "Tuesday" ... etc
+// "assign" or `=` or "reassign"
+var dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+var dayObject = { names: ["tuesday", "monday"] };
+
+var name = "jason"
+console.log(name);
